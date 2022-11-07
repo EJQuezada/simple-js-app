@@ -1,6 +1,6 @@
 alert('Hello world');
 
 let favoriteFood = [
-    {name: 'Torta Ahogada'}
+    {name: 'Tortas Ahogadas'}
 ]
 document.write(favoriteFood)
