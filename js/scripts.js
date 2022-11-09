@@ -62,10 +62,10 @@ let pokemonList= [
 ];
 for (let i = 0; i < pokemonList.length; i++) {
         if(pokemonList[i].height >= 1.7) {
-            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + " m) - Wow, that is a big Pokemon! 
+            document.write(pokemonList[i].name + pokemonList[i].height) - Wow, thats a big Pokemon!
         }
         else {
-            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + " m) - which is an average size Pokemon
+            document.write(pokemonList[i].name + pokemonList[i].height - that is an average size Pokemon.
         }
     }
     
