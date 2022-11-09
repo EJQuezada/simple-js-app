@@ -65,7 +65,7 @@ for (let i = 0; i < pokemonList.length; i++) {
             document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + " m) - Wow, that is a big Pokemon! 
         }
         else {
-            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + " m) - which is an average size Pokemon.
+            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + " m) - which is an average size Pokemon
         }
     }
     
