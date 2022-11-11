@@ -1,5 +1,5 @@
 body {
-    weight: 400; 
+    font-weight: 400; 
     font-size: 16px; 
     font-family: 'Arial', sans-serif; 
     line-height: 1.6; display: block; 
@@ -7,6 +7,6 @@ body {
     background-color: var(#6495ed);
 }
 h3 {
-    weight: 700; 
+    font-weight: 700; 
     font-size: 20px; 
 }
