@@ -65,7 +65,7 @@ for (let i = 0; i < pokemonList.length; i++) {
             console.log(pokemonList[i].name  +  pokemonList[i].height ) - 'Wow, thats a big Pokemon!' 
         }
         else {
-            console.log(pokemonList[i].name + pokemonList[i].height ) 
+            console.log(pokemonList[i].name +  pokemonList[i].height ) 
         }
 }
     
