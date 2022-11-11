@@ -7,6 +7,6 @@ body {
     background-color: var(#6495ed);
 }
 h3 {
-    weight: 700; 
+    font-weight: 700; 
     font-size: 20px; 
 }
