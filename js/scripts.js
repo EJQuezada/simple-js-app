@@ -7,7 +7,7 @@ let pokemonList= [
     }, 
     {
         name: 'Charizard',
-        height: 1.7,
+        height: '1.7',
         weight: 90.5,
         type: ['fire', 'flying']
     }, 
