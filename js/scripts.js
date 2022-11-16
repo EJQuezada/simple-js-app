@@ -60,7 +60,7 @@ let pokemonList = [
         type: ['ground']
     }    
 ];
-pokemonList.forEach(function(_name) {
+pokemonList.forEach(function(_pokemon) {
     if (pokemonList[i].height >= 1.7) {
         document.write(pokemonList[i].name  + 2 pokemonList[i].height + ' - Wow, thats big!' + "</br>"  )
     }
