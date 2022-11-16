@@ -60,12 +60,12 @@ let pokemonList = [
         type: ['ground']
     }    
 ];
-for (let i = 0; i < pokemonList.length; i++) {
-        if (pokemonList[i].height >= 1.7) {
-            document.write(pokemonList[i].name  +  pokemonList[i].height + ' - Wow, thats big!' + "</br>"  )
-        }
-        else {
-            document.write(pokemonList[i].name  +  pokemonList[i].height + "</br>"  )
-        }
-}
+pokemonList.forEach(function(name) {
+    if (pokemonList[i].height >= 1.7) {
+        document.write(pokemonList[i].name  + 2 pokemonList[i].height + ' - Wow, thats big!' + "</br>"  )
+    }
+    else {
+        document.write(pokemonList[i].name  +  pokemonList[i].height + "</br>"  )
+    }
+});
     
