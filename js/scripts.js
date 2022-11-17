@@ -1,5 +1,5 @@
-let pokemonRepository =(function(){
-    let pokemonList =[
+let pokemonRepository= (function() {
+    let pokemonList= [
         {
             name: 'Pikachu',
             height: 0.4,
@@ -69,10 +69,10 @@ let pokemonRepository =(function(){
         return pokemonList;
     }
 
-    return {
-        getAll: getAll,
-        add: add
-    };
+        return {
+            getAll: getAll,
+            add: add
+        };
 /*pokemonList.forEach(function(_pokemon) {
         if (_pokemon.height >= 1.7) {
             document.write(_pokemon.name  +  _pokemon.height + ' - Wow, thats big!' + "</br>"  )
