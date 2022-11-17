@@ -1,5 +1,5 @@
-let pokemonRepository = (function () {
-    let pokemonList = [
+let pokemonRepository= (function () {
+    let pokemonList= [
     {
         name: 'Pikachu',
         height: 0.4,
