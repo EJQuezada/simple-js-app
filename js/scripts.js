@@ -71,7 +71,7 @@ let pokemonRepository = (function () {
 
     return {
         getAll: getAll,
-        add: add
+        add: add,
     };
 /*pokemonList.forEach(function(_pokemon) {
     if (_pokemon.height >= 1.7) {
