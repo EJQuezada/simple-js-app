@@ -74,7 +74,7 @@ let pokemonRepository = (function () {
         add: add,
     };
 /*pokemonList.forEach(function(_pokemon) {
-    if (_pokemon.height >= 1.7) {
+    if (pokemon.height >= 1.7) {
         document.write(_pokemon.name  +  _pokemon.height + ' - Wow, thats big!' + "</br>"  )
     }
     else {
