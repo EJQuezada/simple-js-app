@@ -88,6 +88,6 @@ pokemonRepository.getAll().forEach(function (pokemon) {
         document.write(pokemon.name  +  pokemon.height +  "- Wow, that's big!" + "</br>");
     } 
     else {
-        document.write(pokemon.name  + pokemon.height + "</br>");
+        document.write(pokemon.name  +  pokemon.height + "</br>");
     }
 });
