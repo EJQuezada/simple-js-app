@@ -84,10 +84,13 @@ let pokemonRepository = (function () {
 })();
     
 pokemonRepository.getAll().forEach(function (pokemon) {
-    if (pokemon.height >= 1.7) {
-        document.write(pokemon.name  +  pokemon.height +  "- Wow, that's big!" + "</br>");
-    } 
-    else {
-        document.write(pokemon.name  +  pokemon.height + "</br>");
-    }
+    let pokemonList = document.querySelector
+    (".pokemonList");
+    let listpokemon = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = "placeholder";
+    button.classList.add("button-class");
+    listpokemon.appendChild(button);
+    pokemonList.appendChild(listpokemon);
+
 });
