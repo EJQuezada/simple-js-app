@@ -94,14 +94,6 @@ let pokemonRepository = (function () {
 */
 })();
     
-pokemonRepository.getAll().forEach(function (pokemon) {
-    let pokemonList = document.querySelector
-    (".pokemonList");
-    let listpokemon = document.createElement("li");
-    let button = document.createElement("button");
-    button.innerText = pokemon.name;
-    button.classList.add("button-class");
-    listpokemon.appendChild(button);
-    pokemonList.appendChild(listpokemon);
-
-});
+pokemonRepository.getAll().forEach(function (pokemon){
+    pokemonRepository.addListItem(pokemon)
+});   
