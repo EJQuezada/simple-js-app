@@ -1,4 +1,4 @@
-let pokemonRepository = (function () {
+/*let pokemonRepository = (function () {
     let pokemonList = [
     {
         name: 'Pikachu',
@@ -92,8 +92,14 @@ let pokemonRepository = (function () {
     else {
         document.write(_pokemon.name  +  _pokemon.height + "</br>"  )
     }
-*/        
+      
 })();
+*/
+let pokemonRepository = (function () {
+    let pokemonList = []
+
+let pokemonRepository = (function () {
+    let pokemonList = [
 
 pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon)
