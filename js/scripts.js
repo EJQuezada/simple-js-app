@@ -1,4 +1,4 @@
-let pokemonRepository = (function () {
+/*let pokemonRepository = (function () {
     let pokemonList = [
     {
         name: 'Pikachu',
@@ -92,9 +92,51 @@ let pokemonRepository = (function () {
     else {
         document.write(_pokemon.name  +  _pokemon.height + "</br>"  )
     }
-*/
+
 })();
-    
+*/
+let pokemonRepository = (function () {
+    let pokemonList = [];
+    let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+
+    function getAll() {
+        return pokemonRepository;
+    }
+
+    function addListItem(pokemon){
+      let pokemonList = document.querySelector
+      (".pokemonList");
+      let listpokemon = document.createElement("li");
+      let button = document.createElement("button");
+      button.innerText = pokemon.name;
+      button.classList.add("button-class");
+      listpokemon.appendChild(button);
+      pokemonList.appendChild(listpokemon);  
+    }
+
+    function loadList() {
+        return fetch(apiUrl).then(function (response) {
+            return response.json();
+        }).then (function (json) {
+            json.results.forEach(function (item) {
+                let pokemon = {
+                    name: item.name,
+                    detailsUrl: item.url
+                };
+                add(pokemon);
+            });
+        }).catch(function (e) {
+            console.error(e);
+        })
+    }
+    return {
+        add: add,
+        getAll: getAll,
+        addListItem: addListItem,
+        loadList: loadList
+    };
+})();
+
 pokemonRepository.getAll().forEach(function (pokemon){
     pokemonRepository.addListItem(pokemon)
 });   
