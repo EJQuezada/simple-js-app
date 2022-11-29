@@ -140,4 +140,3 @@ let pokemonRepository = (function () {
 pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
 });
-   
