@@ -99,6 +99,18 @@ let pokemonRepository = (function () {
     let pokemonList = [];
     let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
+    function add(pokemon) {
+        if(
+            typeof pokemon === "object" &&
+            "name" in pokemon &&
+            "height" in pokemon &&
+            "types" in pokemon
+        ){
+            repository.push(pokemon);
+        } else {
+            console.log("pokemon is not correct");
+        }
+    }
     function getAll() {
         return pokemonRepository;
     }
@@ -139,4 +151,4 @@ let pokemonRepository = (function () {
 
 pokemonRepository.getAll().forEach(function (pokemon){
     pokemonRepository.addListItem(pokemon)
-});   
+});  
