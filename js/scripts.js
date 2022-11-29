@@ -100,12 +100,12 @@ let pokemonRepository = (function () {
     let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
     function add(pokemon) {
-        if(
+        if (
             typeof pokemon === "object" &&
             "name" in pokemon &&
             "height" in pokemon &&
             "types" in pokemon
-        ){
+        ) {
             repository.push(pokemon);
         } else {
             console.log("pokemon is not correct");
@@ -116,8 +116,7 @@ let pokemonRepository = (function () {
     }  
     
     function addListItem(pokemon){
-        let pokemonList = document.querySelector
-        (".pokemonList");
+        let pokemonList = document.querySelector(".pokemonList");
         let listpokemon = document.createElement("li");
         let button = document.createElement("button");
         button.innerText = pokemon.name;
