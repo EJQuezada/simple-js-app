@@ -112,7 +112,7 @@ let pokemonRepository = (function () {
         }
     }
     function getAll() {
-        return pokemonRepository;
+        return repository;
     }  
     
     function addListItem(pokemon){
