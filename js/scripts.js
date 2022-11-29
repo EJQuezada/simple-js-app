@@ -103,7 +103,7 @@ let pokemonRepository = (function () {
         if(
             typeof pokemon === "object" &&
             "name" in pokemon &&
-            "detailsUrl" in pokemon
+            
         ) {
             repository.push(pokemon);
         } else {
