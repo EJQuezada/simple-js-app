@@ -129,18 +129,15 @@ let pokemonRepository = (function () {
             console.error(e);
         })
     }
-
     return {
-        getAll: getAll,
         add: add,
+        getAll: getAll,
         addListItem: addListItem,
         loadList: loadList
     };
+})();
     
-    pokemonRepository.loadList().then (function() {
-        pokemonRepository.getAll().forEach(function (pokemon) {
-                pokemonRepository.addListItem(pokemon);
-        });
-    });  
-
-})
+pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.addListItem(pokemon);
+});
+   
