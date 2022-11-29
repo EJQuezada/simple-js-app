@@ -152,6 +152,12 @@ let pokemonRepository = (function () {
             console.error(e);
         });
     }
+
+    function showDetails(pokemon) {
+        loadDetails(pokemon).then(function () {
+            console.log(pokemon);
+        });
+    }
     
     return {
         add: add,
