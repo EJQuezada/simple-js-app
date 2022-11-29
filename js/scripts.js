@@ -122,6 +122,9 @@ let pokemonRepository = (function () {
         button.classList.add("button-class");
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);  
+        button.addEventListener("click", function(event) {
+            showDetails(pokemon);
+        });
     }
 
     function loadList() {
