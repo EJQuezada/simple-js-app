@@ -105,7 +105,7 @@ let pokemonRepository = (function () {
             "name" in pokemon 
             
         ) {
-            repository.push(pokemon);
+            pokemonList.push(pokemon);
         } else {
             console.log("pokemon is not correct");
         }
