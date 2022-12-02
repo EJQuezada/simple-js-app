@@ -140,7 +140,7 @@ let pokemonRepository = (function () {
         }).catch(function (e) {
             console.error(e);
         })
-     }
+    }
 
     function loadDetails (item) {
         let url = item.detailsUrl;
@@ -206,13 +206,7 @@ let pokemonRepository = (function () {
             hideModal();
         }
     });
-*/modalTitle.innerText=uppercaseFirst(pokemon.name);
-                modalBody.innerText='';
     
-                console.log(pokemon);
-            });
-        }
-*/
     return {
         add: add,
         getAll: getAll,
