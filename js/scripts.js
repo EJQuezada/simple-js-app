@@ -206,7 +206,13 @@ let pokemonRepository = (function () {
             hideModal();
         }
     });
+*/modalTitle.innerText=uppercaseFirst(pokemon.name);
+                modalBody.innerText='';
     
+                console.log(pokemon);
+            });
+        }
+*/
     return {
         add: add,
         getAll: getAll,
