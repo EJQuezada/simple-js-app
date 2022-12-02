@@ -157,12 +157,12 @@ let pokemonRepository = (function () {
 
     function showDetails(pokemon) {
         pokemonRepository.loadDetails(pokemon).then(function () {
-            showModal(pokemon)
+            showModal(pokemon);
         });
     }
     
     function showModal(pokemon) {
-        let modalContainer = document.querySelector('.modal-cotainer');
+        let modalContainer = document.querySelector('.modal-container');
         modalContainer.innerText = '';
 
         let modal = document.createElement('div');
