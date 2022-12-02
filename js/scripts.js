@@ -178,7 +178,7 @@ let pokemonRepository = (function () {
         pokemonHeight.innerText = "Height:  " + pokemon.height;
 
         let pokemonTypes = document.createElement('p');
-        pokemonTypes.innerText = "Type:  " + pokemonTypes;
+        pokemonTypes.innerText = "Type:  " + pokemon.types;
 
         modal.appendChild(title);
         modal.appendChild(pokemonImage);
