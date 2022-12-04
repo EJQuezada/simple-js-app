@@ -200,7 +200,7 @@ let pokemonRepository = (function () {
         modalContainer.classList.add('is-visible');
     }
 
-    function hideModal() {
+    function hideModal(pokemon) {
         let modalContainer = document.querySelector('.modal-container');
         modalContainer.classList.remove('is-visible');
     }
