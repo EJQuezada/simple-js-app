@@ -168,6 +168,11 @@ let pokemonRepository = (function () {
         let modal = document.createElement('div');
         modal.classList.add('modal');
 
+        let closeButtonElement = document.createElement('button');
+        closeButtonElement.classList.add('modal-close');
+        closeButtonElement.innerText = 'Close';
+        closeButtonElement.addEventListener('click', hideModal);
+
         let title = document.createElement('h1');
         title.innerText = pokemon.name;
 
