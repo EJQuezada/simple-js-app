@@ -29,7 +29,6 @@ h3 {
     border: 2px solid #4caf50;
 }
 
-
 #modal-container.is-visible {
     position: fixed;
     padding: 20px;
