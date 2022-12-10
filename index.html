@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple JS App</title>
@@ -11,11 +11,48 @@
   </head>
 
   <body>
-    <h1 class="main-title">Pokedex</h1>
-      <ul class="pokemonList">
+    <header>
+      <h1 class="main-title">Pokedex</h1>
+      <nav class="navbar-dark bg-dark">
+        <div class="brand">
+          <a class="navbar-brand"> m-0" href="./index.html" id="nav-logo">
+            <img src="./img/icons8-pokeball-48.png" width="32" height="32" class="d-inline-block align-top" alt="pokedex logo">
+          </a>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </header>
+    
+    /*  <ul class="list-group">
       </ul>
       <div id="modal-container"></div>
-    
+    */
+
+    <!--MODAL-->
+    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="pokemonModalLabel">Modal Title</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Scripts-->
     <script src="js/promise-polyfill.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
