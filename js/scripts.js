@@ -97,14 +97,14 @@
 */
 let pokemonRepository = (function () {
     let pokemonList = [];
-    let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
-    let pokemonListElement = document.querySelector(".pokemon-list"); 
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+    let pokemonListElement = document.querySelector('.pokemon-list'); 
 
     function add(pokemon) {
-        if (typeof pokemon === "object" && "name" in pokemon && "detailsUrl" in pokemon) {
+        if (typeof pokemon === 'object' && 'name' in pokemon && 'detailsUrl' in pokemon) {
             pokemonList.push(pokemon);
         } else {
-            console.log("pokemon is not correct");
+            console.log('pokemon is not correct');
         }
     }
     function getAll() {
@@ -112,14 +112,14 @@ let pokemonRepository = (function () {
     }
 
     function addListItem(pokemon) {
-        let pokemonList = document.querySelector(".pokemon-list");
-        let listItem = document.createElement("li");
-        let button = document.createElement("button");
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
         button.innerText = pokemon.name;
-        button.classList.add("button-class");
+        button.classList.add('button-class');
         listItem.appendChild(button);
         pokemonList.appendChild(listItem);  
-        button.addEventListener("click", function(event) {
+        button.addEventListener('click', function(event) {
             showDetails(pokemon);
         });
     }
@@ -178,10 +178,10 @@ let pokemonRepository = (function () {
         pokemonImage.src = pokemon.imageUrl;
 
         let pokemonHeight = document.createElement('p');
-        pokemonHeight.innerText = "Height:  " + pokemon.height;
+        pokemonHeight.innerText = 'Height:  ' + pokemon.height;
 
         let pokemonTypes = document.createElement('p');
-        pokemonTypes.innerText = "Type:  " + pokemon.types;
+        pokemonTypes.innerText = 'Type:  ' + pokemon.types;
 
         modal.appendChild(title);
         modal.appendChild(pokemonImage);
