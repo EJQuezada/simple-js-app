@@ -172,7 +172,7 @@ let pokemonRepository = (function () {
         closeButtonElement.innerText = 'Close';
         closeButtonElement.addEventListener('click', hideModal);
 
-        let title = document.createElement('h1');
+        let title = document.createElement('h3');
         title.innerText = pokemon.name;
 
         let pokemonImage = document.createElement('img');
