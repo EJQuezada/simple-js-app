@@ -179,7 +179,7 @@ let pokemonRepository = (function () {
         loadList: loadList,
         loadDetails: loadDetails,
         showDetails: showDetails,
-        };
+    };
 })();
 
 pokemonRepository.loadList().then(function() {
