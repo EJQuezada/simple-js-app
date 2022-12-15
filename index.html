@@ -11,16 +11,37 @@
   </head>
   
   <body>
-    <h1 class="main-title">Pokedex</h1>
-      <ul class="pokemonList">
-      </ul>
-      <div id="modal-container"></div>
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Pokedex</a>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+      </div>
+    </nav>
+    <div class="pokedex">
+      <h1 class="pokemon-header">Pokemon Roledex</h1>
+      <ul class="pokemon-list list-group"></ul>
+    </div>
 
+    <div class="modalfade" id="pokemon-modal" tabindex="-1" role="dialog" aria-labelledby="pokemon-modal" aria-modal="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Modal title</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
