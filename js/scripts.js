@@ -102,8 +102,8 @@ let pokemonRepository = (function () {
 
     function add(pokemon) {
         pokemonList.push(pokemon);
-        }
     }
+    
     function getAll() {
         return pokemonList;
     }
@@ -179,7 +179,7 @@ let pokemonRepository = (function () {
         loadList: loadList,
         loadDetails: loadDetails,
         showDetails: showDetails,
-    };
+        };
 })();
 
 pokemonRepository.loadList().then(function() {
