@@ -73,6 +73,9 @@ h3 {
     color: whitesmoke;
 }
 
+#modal-container {
+    display: none;
+}
 
 #modal-container.is-visible {
     position: fixed;
