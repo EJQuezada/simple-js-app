@@ -40,6 +40,7 @@ h3 {
     padding: 14px;
     width: 75%;
     background-color: #2596BE;
+    text-transform: capitalize;
 }
 
 .pokemon-list {
@@ -121,6 +122,9 @@ h3 {
     width: 100%;
     max-width: 400px;
     text-align: center;
+}
+.modal-title {
+    text-transform: capitalize;
 }
 
 .modal-close {
