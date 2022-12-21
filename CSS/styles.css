@@ -98,6 +98,14 @@ h3 {
     text-align: center;
 }
 
+.modal{
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
 
 .modal-title {
     text-transform: capitalize;
