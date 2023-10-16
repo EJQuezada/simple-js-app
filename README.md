@@ -1,4 +1,4 @@
-# Pokedex Application: a simple-js-app
+# Pokedex: a simple-js-app
 
 # Objective: 
   Build a Pokedex web application using HTML, CSS, and JavaScript code that loads data from an external API/URL to allow viewing data points in detail.
