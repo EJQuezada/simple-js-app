@@ -7,10 +7,10 @@
   
   On user action (by clicking on an item), the user is able view details for that item via pop-up window.
 
-# Technical Dependencies so far:
+## Technical Dependencies so far:
   * HTML
   * CSS
   * JS
   
-# Link: 
+## Link: 
 https://EJQuezada.github.io/simple-js-app/
