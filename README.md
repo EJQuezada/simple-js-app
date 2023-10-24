@@ -7,7 +7,7 @@
   
   On user action (by clicking on an item), the user is able view details for that item via pop-up window.
 
-## Technical Dependencies so far:
+## Technical Stack:
   * HTML
   * CSS
   * JS
