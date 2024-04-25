@@ -1,7 +1,7 @@
 body {
     font-weight: 400; 
     font-size: 16px; 
-    font-family: 'Arial', sans-serif; 
+    font-family: Cursive; 
     line-height: 1.6; display: block; 
     text-align: justify;
     background-color: #6495ed;
@@ -26,6 +26,7 @@ h3 {
 .pokemon-header {
     background-color: #2596BE;
     padding: 7px;
+    font-family: cursive;
 }
 
 .pokedex {
