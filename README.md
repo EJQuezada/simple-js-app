@@ -1,7 +1,7 @@
 # Pokedex: a simple-js-app
 
 ## Objective: 
-  Build a Pokedex web application using **HTML**, **CSS**, and **JavaScript** code that loads data from an external **API/URL** (https://pokeapi.com/v2/pokemon) to allow viewing data points in detail.
+  Build a Pokedex web application using **HTML**, **CSS**, **Bootstrap**, and **JavaScript** code that loads data from an external **API/URL** (https://pokeapi.com/v2/pokemon) to allow viewing data points in detail.
   
   The Pokedex application displays a sample list of 150 Pokemons with information about their image, name, height, abilities and types.
   
